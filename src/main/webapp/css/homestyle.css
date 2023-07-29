@@ -1,0 +1,152 @@
+body {
+	background: url(../images/back.jpg) no-repeat;
+	background-size: cover;
+	
+}
+
+h1 {
+	color: white;
+}
+
+.bannerthingy{
+	min-height: 13vh;
+}
+
+.homecontainer {
+	margin: 0;
+}
+
+.navbar .menu .menuholder img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 20px;
+}
+
+
+.product-card {
+  background: white;
+  display: inline-block;
+  width: 250px;
+  height: 350px;
+  margin: 20px;
+  border: 1px solid #000000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 20px;
+}
+
+.product-name {
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+.category {
+  font-size: 15px;
+  margin: 0 0 5px;
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0 0 5px;
+}
+
+.product-stock {
+  color: green;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.product-rating {
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.add-to-cart-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: solid;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+
+/*scrolling banner*/
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 770px;
+  overflow: hidden;
+}
+
+.banner-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.banner-slide.active {
+  opacity: 1;
+}
+
+.banner-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
